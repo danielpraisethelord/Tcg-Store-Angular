@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="row">
+        @for (card of cards; track card.id) {
+            <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2 mt-3">
+                <app-tcg-card [pokeCard]="card"/>
+            </div>
+        } @empty {
+            <div class="col-12">
+                <h1 class="text-center text-light mt-3">Cargando contenido...</h1>
+            </div>
+        }
+    </div>
+</div>

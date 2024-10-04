@@ -1,0 +1,7 @@
+<div class="card poke-card">
+    <!-- <img src="https://kantocards.com/cdn/shop/files/ImagendeWhatsApp2023-09-26alas11.33.21.jpg5.jpg?v=1695777028" alt=""> -->
+    <img src= {{pokeCard?.images?.small}} alt="">
+    <h5 class="text-center mt-2"> {{pokeCard?.name}} </h5>
+    <!-- <p class="text-center"> {{pokeCard?.cardmarket?.prices?.averageSellPrice | currency}} </p> -->
+    <p class="text-center"> {{ (pokeCard?.cardmarket?.prices?.averageSellPrice > 0 ? (pokeCard?.cardmarket?.prices?.averageSellPrice | currency) : 'Gratis') }} </p>
+</div>
